@@ -8,11 +8,12 @@ import "./index.css";
 import "./App.css";
 import App from "./App";
 import Home from "./Components/Home/Home.js";
-import CustForm from "./Components/Forms/CustForm";
-import OrderForm from "./Components/Forms/OrderForm";
-import PayForm from "./Components/Forms/PayForm";
-import VehicleForm from "./Components/Forms/VehicleForm";
+import Classes from "./Components/TypeScriptClasses/TypeScriptClasses";
+import ControlFlow from "./Components/TypeScriptControlFlowAnalysis/ControlFlow";
+import Interfaces from "./Components/TypeScriptInterfaces/Interfaces";
+import Types from "./Components/TypeScriptTypes/Types";
 import JobForm from "./Components/Forms/JobForm";
+import Handbook from "./Components/Handbook/Handbook";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,10 +21,11 @@ root.render(
     <Routes>
       <Route exact path={"/"} element={<App />}>
         <Route index="/home" element={<Home />} />
-        <Route path="/custForm" element={<CustForm />} />
-        <Route path="/orderForm" element={<OrderForm />} />
-        <Route path="/payForm" element={<PayForm />} />
-        <Route path="/vehicleForm" element={<VehicleForm />} />
+        <Route path="/classes" element={<Classes />} />
+        <Route path="/handbook" element={<Handbook />} />
+        <Route path="/controlFlow" element={<ControlFlow />} />
+        <Route path="/interfaces" element={<Interfaces />} />
+        <Route path="/types" element={<Types />} />
         <Route path="/jobForm" element={<JobForm />} />
       </Route>
     </Routes>

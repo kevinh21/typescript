@@ -1,6 +1,14 @@
-
-
+/* .body {
+  background-color: maroon;
+} */
 .homeContainer {
-  /* margin: 240px; */
-  padding: 70px;
+  margin-left: 16%;
+  /* margin-top: 40px; */
+  width: 92%;
+}
+
+#title {
+  display: inline-block;
+  margin-top: 80px;
+  margin-right: 18%;
 }

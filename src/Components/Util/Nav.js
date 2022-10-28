@@ -9,47 +9,29 @@ const Nav = () => {
         <div id="navLogo">
           <img
             classname="navLogo"
+            width="300px"
             alt="Order Form"
             src={process.env.PUBLIC_URL + "/images/navLogo.jpg"}
           ></img>
         </div>
         <ul className="navMenu">
           <li id="navHome">
-            <NavLink to="/home"> Home </NavLink>
+            <NavLink to="/"> Cheat Sheats </NavLink>
           </li>
           <li id="navScreens">
-            <NavLink to="/custForm"> Customer </NavLink>
+            <NavLink to="/handbook"> Handbook </NavLink>
+          </li>
+          <li id="navScreens">
+            <NavLink to="/classes"> Classes </NavLink>
           </li>
           <li>
-            <NavLink to="/vehicleForm">Vehicle</NavLink>
+            <NavLink to="/types">Types</NavLink>
           </li>
           <li>
-            <NavLink to="/jobForm">Job</NavLink>
+            <NavLink to="/interfaces">Interfaces</NavLink>
           </li>
           <li>
-            <NavLink to="/orderForm">Order</NavLink>
-          </li>
-          <li>
-            <NavLink to="/payForm">Payment</NavLink>
-          </li>
-          <li>
-            <ul id="navOrderList">
-              <li>
-                <NavLink to="/custList">Customers</NavLink>
-              </li>
-              <li>
-                <NavLink to="/jobList">Jobs</NavLink>
-              </li>
-              <li>
-                <NavLink to="/orderList">Orders</NavLink>
-              </li>
-              <li>
-                <NavLink to="/payList">Payments</NavLink>
-              </li>
-              <li>
-                <NavLink to="/vehicleList">Vehicles</NavLink>
-              </li>
-            </ul>
+            <NavLink to="/controlFlow">Control Flow Analysis</NavLink>
           </li>
         </ul>
       </nav>
